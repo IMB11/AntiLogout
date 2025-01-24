@@ -36,7 +36,7 @@ public abstract class CLogoutRulesPlayer implements ILogoutRules {
 
     @Override
     public boolean al_allowDisconnect() {
-        return this.allowDisconnectTime != -1 && this.allowDisconnectTime <= System.currentTimeMillis();
+        return false;
     }
 
     @Override

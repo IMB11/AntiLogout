@@ -34,7 +34,6 @@ public class AntiLogout implements DedicatedServerModInitializer {
         ServerPlayConnectionEvents.JOIN.register(EventHandler::onPlayerJoin);
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            AfkCommand.register(dispatcher);
             AntiLogoutCommand.register(dispatcher);
         });
 
